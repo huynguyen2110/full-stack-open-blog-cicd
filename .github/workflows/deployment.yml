@@ -21,15 +21,19 @@ jobs:
               node-version: '16'
 
           - name: Install dependencies
+            working-directory: ./blog
             run: npm install
 
           - name: lint
+            working-directory: ./blog
             run: npm run eslint
 
           - name: Check build
+            working-directory: ./blog
             run: npm run build
 
           - name: test
+            working-directory: ./blog
             run: npm run test
 
           - name: deploy
