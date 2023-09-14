@@ -26,7 +26,7 @@ jobs:
 
           - name: lint
             working-directory: ./blog
-            run: npm run eslint
+            run: npm run lint
 
           - name: Check build
             working-directory: ./blog
